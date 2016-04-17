@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:fillViewport="true"
+    tools:context="com.example.dell.studentresultmanagement.SignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/SignUpToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/myName"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/SignUpToolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_textbox"
+            android:hint="FULL NAME"
+            android:inputType="textPersonName"
+            android:padding="5dp" />
+
+
+        <EditText
+            android:id="@+id/myUser"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/myName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_textbox"
+            android:ems="10"
+            android:hint="USERNAME"
+            android:inputType="textPersonName"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/myPassword"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/myUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_textbox"
+            android:ems="10"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/myPassword"
+            android:layout_below="@+id/myPassword"
+            android:checked="false"
+            android:text="Show Password" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="79dp"
+            android:background="@drawable/custom_button"
+            android:onClick="onRegister"
+            android:singleLine="false"
+            android:text="REGISTER"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/myError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+</ScrollView>

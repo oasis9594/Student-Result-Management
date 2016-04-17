@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Student Result Management</string>
+    <string name="invalidCredentials">Invalid username or password</string>
+    <string name="ERROR_WAITING">Admin has not processed your request</string>
+    <string name="ERROR_REJECTED">Admin has rejected your request</string>
+    <string name="ERROR_USERNAME_EXISTS">Username already exists!!Try a different username</string>
+    <string-array name="subjects">
+        <item>Subject 1</item>
+        <item>Subject 2</item>
+        <item>Subject 3</item>
+        <item>Subject 4</item>
+        <item>Subject 5</item>
+        <item>Subject 6</item>
+    </string-array>
+    <string name="tot_marks">Total Marks</string>
+    <string name="tot_percent">Percentage(%)</string>
+    <string name="RESULT_NOT_DECLARED">Result not declared!!!!!</string>
+    <string name="logOut">Log Out</string>
+    <string name="ERROR_MARKS">Enter valid marks!!!</string>
+    <string name="RESULT_DECLARED">Result Declared!!!</string>
+</resources>
